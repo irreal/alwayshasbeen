@@ -57,7 +57,7 @@ func _physics_process(_delta):
 	# When the character’s direction changes, we want to to scale the Sprite accordingly to flip it.
 	# This will make Robi face left or right depending on the direction you move.
 	if direction.x != 0:
-		sprite.scale.x = 1 if direction.x > 0 else -1
+		sprite.scale.x = 0.1 if direction.x > 0 else -0.1
 
 	# We use the sprite's scale to store Robi’s look direction which allows us to shoot
 	# bullets forward.
